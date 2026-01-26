@@ -1,0 +1,16 @@
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/allure-results/
+/blob-report/
+/playwright/.cache/
+/.features-gen/
+/.features-gen-web/
+
+# dev
+.justfile
+.env
+.envrc
+rest.http
+/temp/

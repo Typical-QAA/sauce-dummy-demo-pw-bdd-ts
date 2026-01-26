@@ -1,0 +1,30 @@
+{
+  "name": "saucedemo-dummyjson-demo-pw-bdd-ts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx bddgen && npx playwright test",
+    "test:api": "npx bddgen && npx playwright test --project api",
+    "test:web": "npx bddgen && npx playwright test --project web-chrome",
+    "typecheck": "npx tsc --noEmit",
+    "ci:test": "npx bddgen && npx playwright test --config ./environment/playwright-configs/playwright-ci.config.ts",
+    "ci:test:api": "npx bddgen && npx playwright test --project api --config ./environment/playwright-configs/playwright-ci.config.ts",
+    "ci:test:web": "npx bddgen && npx playwright test --project web-chrome --config ./environment/playwright-configs/playwright-ci.config.ts"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Typical-QAA",
+    "url": "https://github.com/Typical-QAA"
+  },
+  "license": "MIT",
+  "description": "Saucedemo and dummyjson test automation demo framework using Playwright + TypeScript and BDD approach",
+  "devDependencies": {
+    "@faker-js/faker": "^10.2.0",
+    "@playwright/test": "^1.58.0",
+    "@types/node": "^25.0.10",
+    "allure-playwright": "^3.4.5",
+    "dotenv": "^17.2.3",
+    "playwright-bdd": "^8.4.2",
+    "typescript": "^5.9.3"
+  }
+}
