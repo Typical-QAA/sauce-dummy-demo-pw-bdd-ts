@@ -41,7 +41,7 @@ export default defineConfig({
         outputDir: path.resolve(__dirname, '../../.features-gen/web/'),
         featuresRoot: path.resolve(__dirname, '../../tests/web/')
       }),
-      use: { ...devices['Desktop Chrome'], baseURL: process.env.PW_BASE_WEB_URL || 'https://www.saucedemo.com' }
+      use: { ...devices['Desktop Chrome'], channel: 'chromium', baseURL: process.env.PW_BASE_WEB_URL || 'https://www.saucedemo.com' }
     }
   ]
 })

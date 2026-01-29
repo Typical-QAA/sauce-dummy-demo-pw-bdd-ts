@@ -23,7 +23,7 @@ export default defineConfig({
     {
       name: 'web-chrome',
       testDir: defineBddConfig({ outputDir: '.features-gen/web', featuresRoot: 'tests/web/' }),
-      use: { ...devices['Desktop Chrome'], baseURL: process.env.PW_BASE_WEB_URL || 'https://www.saucedemo.com' }
+      use: { ...devices['Desktop Chrome'], channel: 'chromium', baseURL: process.env.PW_BASE_WEB_URL || 'https://www.saucedemo.com' }
     }
   ]
 })
