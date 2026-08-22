@@ -2,14 +2,15 @@
   "name": "saucedemo-dummyjson-demo-pw-bdd-ts",
   "version": "1.0.0",
   "main": "index.js",
+  "packageManager": "pnpm@11.11.0",
   "scripts": {
-    "test": "npx bddgen && npx playwright test",
-    "test:api": "npx bddgen && npx playwright test --project api",
-    "test:web": "npx bddgen && npx playwright test --project web-chrome",
-    "typecheck": "npx tsc --noEmit",
-    "ci:test": "npx bddgen && npx playwright test --config ./environment/playwright-configs/playwright-ci.config.ts",
-    "ci:test:api": "npx bddgen && npx playwright test --project api --config ./environment/playwright-configs/playwright-ci.config.ts",
-    "ci:test:web": "npx bddgen && npx playwright test --project web-chrome --config ./environment/playwright-configs/playwright-ci.config.ts"
+    "test": "bddgen && playwright test",
+    "test:api": "bddgen && playwright test --project api",
+    "test:web": "bddgen && playwright test --project web-chrome",
+    "typecheck": "tsc --noEmit",
+    "ci:test": "bddgen && playwright test --config ./environment/playwright-configs/playwright-ci.config.ts",
+    "ci:test:api": "bddgen && playwright test --project api --config ./environment/playwright-configs/playwright-ci.config.ts",
+    "ci:test:web": "bddgen && playwright test --project web-chrome --config ./environment/playwright-configs/playwright-ci.config.ts"
   },
   "keywords": [],
   "author": {
