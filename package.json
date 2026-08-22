@@ -21,11 +21,11 @@
   "description": "Saucedemo and dummyjson test automation demo framework using Playwright + TypeScript and BDD approach",
   "devDependencies": {
     "@faker-js/faker": "^10.2.0",
-    "@playwright/test": "^1.58.0",
+    "@playwright/test": "1.61.1",
     "@types/node": "^25.0.10",
     "allure-playwright": "^3.4.5",
     "dotenv": "^17.2.3",
-    "playwright-bdd": "^8.4.2",
+    "playwright-bdd": "9.2.0",
     "typescript": "^5.9.3"
   }
 }
